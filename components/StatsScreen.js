@@ -8,7 +8,7 @@ export default function StatsScreen() {
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'black'}}>
-      <Text style={stylesSheet.text}>Metal </Text>
+      <Text style={stylesSheet.text}>Metal 🤘</Text>
       <Text style={stylesSheet.text}>Count: {bands.length}</Text>
       <Text style={stylesSheet.text}>Fans: {`${fans},000`}</Text>
       <Text style={stylesSheet.text}>Countries: {countries.length}</Text>
