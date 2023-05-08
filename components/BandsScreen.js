@@ -21,10 +21,13 @@ export default function BandsScreen() {
 }
 
 function Bands({item}) {
+
+  const splitUp = item.split !== '-'
+
   return (
     <View style={styles.bandView} >
       <View style={styles.bandFlex}>
-        <Text style={styles.text}>{item.band_name}</Text>
+        <Text style={splitUp? styles.split: styles.text}>{item.band_name}</Text>
         <Text style={styles.text}>{item.origin}</Text>
       </View>
       <View style={styles.bandFlex}>
@@ -57,6 +60,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '400',
     color: 'white',
-  }
+  }, 
+  split: {
+    fontSize: 20,
+    fontWeight: '400',
+    color: 'grey',
+    textDecorationLine: 'line-through',
+  } 
 
 });
